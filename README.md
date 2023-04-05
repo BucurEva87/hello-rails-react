@@ -69,7 +69,45 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> This project is not meant to be cloned
+### Setup
+
+In order to access this project first of all clone it
+
+```sh
+git clone https://github.com/BucurEva87/hello-rails-react.git
+cd hello-rails-react
+```
+
+### Prerequisites
+
+You should have Ruby (3.2.2), Rails (>= 7.0.4) and Node.js installed on your machine
+
+### Install
+
+Install dependencies
+
+```sh
+bundle install
+npm install
+```
+
+Create, migrate and seed the database
+
+```sh
+rails db:create
+rails db:migrate
+rails db:seed
+```
+
+### Usage
+
+```sh
+rails s
+```
+
+You can now go to [this](http://localhost:3000) url and see it in action!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors"></a>
 
