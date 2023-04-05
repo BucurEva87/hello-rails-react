@@ -1,21 +1,21 @@
-import React from 'react'
-import { useDispatch } from 'react-redux'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Greeting from './Greeting'
-import { fetchGreetings } from '../redux/greetings/greetingSlice'
+import React from 'react';
+import { useDispatch } from 'react-redux';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Greeting from './Greeting';
+import { fetchGreetings } from '../redux/greetings/greetingSlice';
 
-const App = () => {
-  const dispatch = useDispatch()
+function App() {
+  const dispatch = useDispatch();
 
-  dispatch(fetchGreetings())
+  dispatch(fetchGreetings());
 
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Greeting />} />
+        <Route path="/" element={<Greeting />} />
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;
